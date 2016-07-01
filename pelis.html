@@ -44,18 +44,21 @@
 
 
 <!DOCTYPE html>
-<html>
+<html ng-app>
 <head>
 <title>Pelis</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 </head>
 <body>
-   <div class="webdesigntuts-workshop" style="text-align:center">
-       <h1>Search your movie</h1>
-<input id="filter" type="search" placeholder="Search...">	   	
-<button id="searchButton" >Search</button>
-   </div>
+    <div class="webdesigntuts-workshop" style="text-align:center">
+        <h1>Search your movie</h1>
+        <h1>{{hello}}</h1>
+        <input id="filter" type="search" placeholder="Search..." type="text">	   	
+        <button id="searchButton" >Search</button>
+        <p id="demo"></p>
+    </div>
 </body>
 </html>
