@@ -2,9 +2,10 @@
 
 .jakita {
 	background: #151515;
-	height: 100%;
+	height: 200%;
 	position: absolute;
 	text-align: center;
+	background-size: cover;
 	width: 100%;
 }
 

@@ -17,6 +17,7 @@ angular.module('myApp', [])
             dataType: 'json',
             success: function (json) {
                 films = json.results
+                console.log(films);
             },
             error: function () {
                 errorMessage = 'No se encontraron coincidencias'

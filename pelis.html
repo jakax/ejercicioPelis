@@ -6,15 +6,26 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="jakita" style="text-align:center" ng-controller="miControlador as ctrl">
         <h1>Busque su pelicula</h1>
         <input id="filter" type="search" placeholder="Buscar..." type="text" ng-model="ctrl.entrada" >
         <button ng-click="ctrl.searchFunction()">Buscar</button>
-      <div class="listado">
-        <li ng-repeat="film in films">{{film.original_title}}</li>
-      </div>    
+        <div class="listado">
+            <li ng-repeat="film in films">{{film.original_title}} <a  data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Details</a>
+<!--             <div class="collapse" id="collapseExample">
+                <div class="card card-block">{{film.overview}}</div>
+            </div> --></li>
+        </div>    
     </div>
 </body>
 </html>
